@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dn {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+}
+
+header {
+  position: relative;
+  padding: 0 30px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+}
+header .header__img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+header .ham__icon {
+  cursor: pointer;
+}
+header .mobile__links {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  left: 0;
+  width: 84%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 99;
+  border-radius: 4px;
+}
+header .mobile__links ul {
+  padding: 20px 0;
+  width: 100%;
+}
+header .mobile__links ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+header .mobile__links ul > li:last-child {
+  background-color: #fad400;
+  height: 4rem;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 33px;
+}
+header .mobile__links ul > li:last-child > a {
+  font-size: 1.25rem;
+  font-family: "Fraunces", serif;
+  color: #19536b;
+  text-transform: uppercase;
+}
+header .mobile__links ul > li > a {
+  color: #818498;
+  text-align: center;
+}
+header .title {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.65rem;
+  color: white;
+  letter-spacing: 3px;
+}
+@media (min-width: 50em) {
+  header .title {
+    font-size: 2rem;
+  }
+}
+header .arrow__container {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: upDown ease-in infinite;
+}
+header .arrow__container .arrow__down {
+  height: 7rem;
+}
+header .arrow__container .arrow__down__animate {
+  animation: 2s cubic-bezier(0.39, 0.58, 0.57, 1) infinite pulse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/*# sourceMappingURL=/main.2026268b.css.map */

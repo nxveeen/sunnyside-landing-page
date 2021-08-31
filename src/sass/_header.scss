@@ -1,0 +1,118 @@
+header {
+  position: relative;
+  padding: 0 30px;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+  }
+
+  .header__img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .ham__icon {
+    cursor: pointer;
+  }
+
+  .mobile__links {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    left: 0;
+    width: 84%;
+    // height: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    z-index: 99;
+    border-radius: 4px;
+  }
+
+  .mobile__links ul {
+    padding: 20px 0;
+    width: 100%;
+
+    > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+
+      &:last-child {
+        background-color: $yellow;
+        height: 4rem;
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 33px;
+
+        > a {
+          font-size: 1.25rem;
+          font-family: "Fraunces", serif;
+          color: $dark-blue;
+          text-transform: uppercase;
+        }
+      }
+
+      > a {
+        color: $dark-grayish-blue;
+        text-align: center;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 3.5rem;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.65rem;
+    color: $white;
+    letter-spacing: 3px;
+
+    @include breakpoint("tablet") {
+      font-size: 2rem;
+    }
+  }
+
+  .arrow__container {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: upDown ease-in infinite;
+
+    .arrow__down {
+      height: 7rem;
+
+      &__animate {
+        animation: 2s cubic-bezier(0.39, 0.58, 0.57, 1) infinite pulse;
+      }
+    }
+  }
+}
+
+//----------ANIMATIONS----------
+@keyframes pulse {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
