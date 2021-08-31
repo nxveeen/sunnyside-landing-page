@@ -1,0 +1,59 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  .sect {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .desc {
+      padding: 4rem 2.5rem;
+      text-align: center;
+      height: 30rem;
+
+      h1 {
+        font-family: "Fraunces", serif;
+        font-size: 2.5rem;
+        color: $very-dark-desaturated-blue;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        color: $grayish-blue;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .learn__more {
+        position: relative;
+        display: block;
+        font-family: "Fraunces", serif;
+        color: $very-dark-desaturated-blue;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 118px;
+          top: 14px;
+          display: flex;
+          height: 6px;
+          width: 32%;
+          background-color: rgb(238, 238, 148);
+          border-radius: 4px;
+          z-index: -1;
+        }
+
+        &__2 {
+          &::before {
+            background-color: #fdb1a7;
+          }
+        }
+      }
+    }
+  }
+}

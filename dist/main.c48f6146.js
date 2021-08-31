@@ -123,6 +123,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var hamIcon = document.querySelector(".ham__icon");
 var mobileMenu = document.querySelector(".mobile__links");
 var overlay = document.querySelector(".overlay");
+var anchors = document.querySelectorAll("a"); //------------anchor <a> tag prevent default ------------
+
+anchors.forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+  });
+});
 hamIcon.addEventListener("click", function (e) {
   e.preventDefault();
   mobileMenu.classList.toggle("hidden");
