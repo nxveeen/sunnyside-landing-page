@@ -3,7 +3,7 @@
 const hamIcon = document.querySelector(".ham__icon");
 const mobileMenu = document.querySelector(".mobile__links");
 const overlay = document.querySelector(".overlay");
-const anchors = document.querySelectorAll("a");
+const anchors = document.querySelectorAll(".learn__more");
 
 //------------anchor <a> tag prevent default ------------
 anchors.forEach((a) => {
