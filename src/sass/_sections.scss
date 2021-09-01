@@ -11,13 +11,13 @@
     }
 
     .desc {
-      padding: 4rem 2.5rem;
+      padding: 3rem 1.5rem;
       text-align: center;
-      height: 30rem;
+      height: auto;
 
       h1 {
         font-family: "Fraunces", serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: $very-dark-desaturated-blue;
         margin-bottom: 3rem;
       }
@@ -38,11 +38,13 @@
         &::before {
           content: "";
           position: absolute;
-          left: 118px;
+          left: -3px;
+          right: 0;
+          margin: auto;
           top: 14px;
           display: flex;
           height: 6px;
-          width: 32%;
+          width: 7rem;
           background-color: rgb(238, 238, 148);
           border-radius: 4px;
           z-index: -1;
@@ -53,6 +55,35 @@
             background-color: #fdb1a7;
           }
         }
+      }
+    }
+  }
+  .services {
+    position: relative;
+    margin-top: -5px;
+
+    .content {
+      position: absolute;
+      bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+
+      h1 {
+        font-family: "Fraunces", serif;
+        margin-bottom: 2rem;
+        color: $dark-desaturated-cyan;
+        font-size: 2rem;
+      }
+      p {
+        text-align: center;
+        line-height: 1.4;
+        color: $dark-desaturated-cyan;
+      }
+
+      .phtg {
+        color: $dark-blue;
       }
     }
   }
