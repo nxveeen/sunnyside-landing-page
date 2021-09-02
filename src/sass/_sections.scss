@@ -1,58 +1,85 @@
 .section {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   .sect {
     width: 100%;
     overflow: hidden;
 
-    img {
-      width: 100%;
+    @include breakpoint("desktop") {
+      display: flex;
+      flex-direction: row-reverse;
     }
 
-    .desc {
+    img {
+      width: 100%;
+      @include breakpoint("desktop") {
+        flex: 1;
+      }
+    }
+
+    .desc__container {
       padding: 3rem 1.5rem;
       text-align: center;
       height: auto;
 
-      h1 {
-        font-family: "Fraunces", serif;
-        font-size: 2rem;
-        color: $very-dark-desaturated-blue;
-        margin-bottom: 3rem;
+      @include breakpoint("desktop") {
+        padding: 0;
+        flex: 1;
+        display: grid;
+        place-items: center;
       }
 
-      p {
-        color: $grayish-blue;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-      }
-
-      .learn__more {
-        position: relative;
-        display: block;
-        font-family: "Fraunces", serif;
-        color: $very-dark-desaturated-blue;
-        cursor: pointer;
-
-        &::before {
-          content: "";
-          position: absolute;
-          left: -3px;
-          right: 0;
-          margin: auto;
-          top: 14px;
-          display: flex;
-          height: 6px;
-          width: 7rem;
-          background-color: rgb(238, 238, 148);
-          border-radius: 4px;
-          z-index: -1;
+      .desc {
+        @include breakpoint("desktop") {
+          text-align: left;
+          padding: 0 8rem;
         }
 
-        &__2 {
+        h1 {
+          font-family: "Fraunces", serif;
+          font-size: 2rem;
+          color: $very-dark-desaturated-blue;
+          margin-bottom: 3rem;
+
+          @include breakpoint("desktop") {
+            font-size: 3rem;
+          }
+        }
+
+        p {
+          color: $grayish-blue;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+        }
+
+        .learn__more {
+          position: relative;
+          display: inline;
+          font-family: "Fraunces", serif;
+          color: $very-dark-desaturated-blue;
+          cursor: pointer;
+
           &::before {
-            background-color: #fdb1a7;
+            content: "";
+            position: absolute;
+            left: -3px;
+            right: 0;
+            margin: auto;
+            top: 14px;
+            display: flex;
+            height: 6px;
+            width: 7rem;
+            background-color: rgb(238, 238, 148);
+            border-radius: 4px;
+            z-index: -1;
+          }
+
+          &__2 {
+            &::before {
+              background-color: #fdb1a7;
+            }
           }
         }
       }
@@ -87,4 +114,12 @@
       }
     }
   }
+
+  .reverse {
+    flex-direction: row;
+  }
+}
+
+.fd-row {
+  flex-direction: row;
 }

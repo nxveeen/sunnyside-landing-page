@@ -2,6 +2,14 @@ header {
   position: relative;
   padding: 0 30px;
   height: 33.5rem;
+  background-image: url(/src/images/mobile/image-header.jpg);
+  background-position: bottom;
+  background-size: cover;
+
+  @include breakpoint("desktop") {
+    background-image: url(/src/images/desktop/image-header.jpg);
+    height: 50rem;
+  }
 
   .navbar {
     display: flex;
@@ -9,19 +17,19 @@ header {
     justify-content: space-between;
     height: 100px;
     width: 100%;
-  }
 
-  .header__img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    height: 33.5rem;
-    object-fit: cover;
-  }
+    .logo {
+      @include breakpoint("desktop") {
+        height: 2rem;
+      }
+    }
 
-  .ham__icon {
-    cursor: pointer;
+    .ham__icon {
+      cursor: pointer;
+      @include breakpoint("desktop") {
+        display: none;
+      }
+    }
   }
 
   .mobile__links {
@@ -37,6 +45,10 @@ header {
     background-color: white;
     z-index: 99;
     border-radius: 4px;
+
+    @include breakpoint("desktop") {
+      display: none;
+    }
   }
 
   .mobile__links ul {
@@ -83,8 +95,9 @@ header {
     color: $white;
     letter-spacing: 3px;
 
-    @include breakpoint("tablet") {
+    @include breakpoint("desktop") {
       font-size: 2rem;
+      letter-spacing: 10px;
     }
   }
 
