@@ -271,4 +271,40 @@ header .arrow__container .arrow__down__animate {
   font-family: "Barlow", serif;
 }
 
+footer {
+  width: 100vw;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+footer .grid img {
+  width: 100%;
+}
+footer .bottom__footer {
+  background-color: #90d4c5;
+  padding: 4rem 0;
+}
+footer .bottom__footer .footer__logo {
+  display: flex;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  color: #2c7566;
+}
+footer .bottom__footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #2c7566;
+  margin-bottom: 4rem;
+}
+footer .bottom__footer .socials {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 2rem;
+}
+
 /*# sourceMappingURL=/main.2026268b.css.map */

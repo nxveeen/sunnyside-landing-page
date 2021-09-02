@@ -1,0 +1,42 @@
+footer {
+  width: 100vw;
+  //   padding: 2rem 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bottom__footer {
+    background-color: $dark-moderate-cyan;
+    padding: 4rem 0;
+
+    .footer__logo {
+      display: flex;
+      width: 10rem;
+      margin: auto;
+      margin-bottom: 2rem;
+      color: $footer-svg;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      color: $footer-svg;
+      margin-bottom: 4rem;
+    }
+
+    .socials {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
