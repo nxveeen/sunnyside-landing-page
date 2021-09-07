@@ -31,6 +31,10 @@
     margin: 4rem 0;
     gap: 1.5rem;
 
+    @include breakpoint("desktop") {
+      gap: 3rem;
+    }
+
     img {
       border-radius: 50%;
       width: 6rem;
@@ -41,6 +45,10 @@
       line-height: 1.6;
       color: $dark-grayish-blue;
       padding: 0 1rem;
+
+      @include breakpoint("desktop") {
+        padding: 0 2rem;
+      }
     }
 
     h3 {

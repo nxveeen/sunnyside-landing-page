@@ -32,6 +32,41 @@ header {
     }
   }
 
+  .desktop__links {
+    display: none;
+
+    @include breakpoint("desktop") {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    > li {
+      cursor: pointer;
+
+      &:last-child {
+        background-color: $white;
+        height: 3rem;
+        display: grid;
+        place-items: center;
+        width: 8rem;
+        border-radius: 3rem;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          a {
+            color: $white;
+          }
+        }
+
+        a {
+          font-family: "Fraunces", serif;
+          color: $very-dark-desaturated-blue;
+        }
+      }
+    }
+  }
+
   .mobile__links {
     position: absolute;
     top: 140px;
@@ -52,7 +87,7 @@ header {
   }
 
   .mobile__links ul {
-    padding: 20px 0;
+    padding: 1.5rem 0;
     width: 100%;
 
     > li {
@@ -74,7 +109,7 @@ header {
         > a {
           font-size: 1.25rem;
           font-family: "Fraunces", serif;
-          color: $dark-blue;
+          color: $very-dark-desaturated-blue;
           text-transform: uppercase;
         }
       }
