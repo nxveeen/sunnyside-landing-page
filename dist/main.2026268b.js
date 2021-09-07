@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-header.jpg":[["image-header.348e0754.jpg","src/images/mobile/image-header.jpg"],"src/images/mobile/image-header.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-header.jpg":[["image-header.51e12821.jpg","src/images/desktop/image-header.jpg"],"src/images/desktop/image-header.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-header.jpg":[["image-header.348e0754.jpg","src/images/mobile/image-header.jpg"],"src/images/mobile/image-header.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-header.jpg":[["image-header.51e12821.jpg","src/images/desktop/image-header.jpg"],"src/images/desktop/image-header.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-transform.jpg":[["image-transform.8e7f437a.jpg","src/images/mobile/image-transform.jpg"],"src/images/mobile/image-transform.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-transform.jpg":[["image-transform.6896a4d4.jpg","src/images/desktop/image-transform.jpg"],"src/images/desktop/image-transform.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-stand-out.jpg":[["image-stand-out.3c1fa95c.jpg","src/images/mobile/image-stand-out.jpg"],"src/images/mobile/image-stand-out.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-stand-out.jpg":[["image-stand-out.52848e19.jpg","src/images/desktop/image-stand-out.jpg"],"src/images/desktop/image-stand-out.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-graphic-design.jpg":[["image-graphic-design.c2e0f15a.jpg","src/images/mobile/image-graphic-design.jpg"],"src/images/mobile/image-graphic-design.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-graphic-design.jpg":[["image-graphic-design.7f388fc2.jpg","src/images/desktop/image-graphic-design.jpg"],"src/images/desktop/image-graphic-design.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\mobile\\image-photography.jpg":[["image-photography.aa3e55ee.jpg","src/images/mobile/image-photography.jpg"],"src/images/mobile/image-photography.jpg"],"C:\\Users\\Naveen\\Desktop\\myapp\\1. Sunnyside\\src\\images\\desktop\\image-photography.jpg":[["image-photography.e23a528c.jpg","src/images/desktop/image-photography.jpg"],"src/images/desktop/image-photography.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61975" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50535" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

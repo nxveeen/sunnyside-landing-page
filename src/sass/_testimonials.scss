@@ -1,6 +1,10 @@
 .testm {
   padding: 2rem 1rem;
 
+  @include breakpoint("desktop") {
+    padding: 6rem;
+  }
+
   h1 {
     text-align: center;
     font-family: "Fraunces", serif;
@@ -8,12 +12,21 @@
     font-size: 1rem;
     letter-spacing: 4px;
     color: $grayish-blue;
+
+    @include breakpoint("desktop") {
+      font-size: 1.5rem;
+    }
+  }
+
+  .testimonials {
+    @include breakpoint("desktop") {
+      display: flex;
+    }
   }
 
   .testimonial {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     margin: 4rem 0;
     gap: 1.5rem;

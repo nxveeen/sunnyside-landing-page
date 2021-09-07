@@ -7,6 +7,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
 
+    @include breakpoint("desktop") {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
     img {
       width: 100%;
     }
