@@ -278,6 +278,9 @@ header .arrow__container .arrow__down__animate {
   color: #23303e;
   cursor: pointer;
 }
+.section .sect .desc__container .desc .learn__more:hover::before {
+  background-color: #fad400;
+}
 .section .sect .desc__container .desc .learn__more::before {
   content: "";
   position: absolute;
@@ -288,12 +291,15 @@ header .arrow__container .arrow__down__animate {
   display: flex;
   height: 6px;
   width: 7rem;
-  background-color: #eeee94;
+  background-color: #eeeeb4;
   border-radius: 4px;
   z-index: -1;
 }
 .section .sect .desc__container .desc .learn__more__2::before {
   background-color: #fdb1a7;
+}
+.section .sect .desc__container .desc .learn__more__2:hover::before {
+  background-color: #fe7867;
 }
 .section .services {
   display: flex;

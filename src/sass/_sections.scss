@@ -79,6 +79,12 @@
           color: $very-dark-desaturated-blue;
           cursor: pointer;
 
+          &:hover {
+            &::before {
+              background-color: $yellow;
+            }
+          }
+
           &::before {
             content: "";
             position: absolute;
@@ -89,7 +95,7 @@
             display: flex;
             height: 6px;
             width: 7rem;
-            background-color: rgb(238, 238, 148);
+            background-color: rgb(238, 238, 180);
             border-radius: 4px;
             z-index: -1;
           }
@@ -97,6 +103,12 @@
           &__2 {
             &::before {
               background-color: #fdb1a7;
+            }
+
+            &:hover {
+              &::before {
+                background-color: $soft-red;
+              }
             }
           }
         }
