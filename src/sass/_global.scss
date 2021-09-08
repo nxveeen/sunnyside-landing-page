@@ -38,3 +38,7 @@ a {
   background: rgba($color: black, $alpha: 0.6);
   z-index: 50;
 }
+
+.noScroll {
+  overflow: hidden;
+}

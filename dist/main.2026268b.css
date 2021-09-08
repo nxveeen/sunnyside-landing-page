@@ -40,6 +40,10 @@ a {
   z-index: 50;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 header {
   position: relative;
   padding: 0 30px;
@@ -60,6 +64,9 @@ header .navbar {
   justify-content: space-between;
   height: 100px;
   width: 100%;
+}
+header .navbar .logo {
+  cursor: pointer;
 }
 @media (min-width: 67em) {
   header .navbar .logo {
@@ -122,6 +129,23 @@ header .mobile__links {
   header .mobile__links {
     display: none;
   }
+}
+header .mobile__links .back {
+  position: absolute;
+  width: auto;
+  top: -4rem;
+  background: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+header .mobile__links .back svg {
+  width: 2.5rem;
+  rotate: 45deg;
+  color: #23303e;
 }
 header .mobile__links ul {
   padding: 1.5rem 0;

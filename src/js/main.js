@@ -1,7 +1,9 @@
 "use strict";
 
+const body = document.querySelector("body");
 const hamIcon = document.querySelector(".ham__icon");
 const mobileMenu = document.querySelector(".mobile__links");
+const closeMobileMenuBtn = document.querySelector(".back");
 const overlay = document.querySelector(".overlay");
 const anchors = document.querySelectorAll("a");
 const desktopLinks = document.querySelector(".desktop__links");
@@ -16,6 +18,7 @@ anchors.forEach((a) => {
 const fadeMobileMenu = function () {
   mobileMenu.classList.toggle("hidden");
   overlay.classList.toggle("dn");
+  body.classList.toggle("noScroll");
 };
 
 hamIcon.addEventListener("click", function (e) {
@@ -23,7 +26,7 @@ hamIcon.addEventListener("click", function (e) {
   fadeMobileMenu();
 });
 
-overlay.addEventListener("click", function () {
+closeMobileMenuBtn.addEventListener("click", function () {
   fadeMobileMenu();
 });
 

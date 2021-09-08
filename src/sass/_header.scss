@@ -19,6 +19,7 @@ header {
     width: 100%;
 
     .logo {
+      cursor: pointer;
       @include breakpoint("desktop") {
         height: 2rem;
       }
@@ -83,6 +84,25 @@ header {
 
     @include breakpoint("desktop") {
       display: none;
+    }
+
+    .back {
+      position: absolute;
+      width: auto;
+      top: -4rem;
+      background: white;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+
+      svg {
+        width: 2.5rem;
+        rotate: 45deg;
+        color: $very-dark-desaturated-blue;
+      }
     }
   }
 
