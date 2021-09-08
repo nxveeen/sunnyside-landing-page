@@ -21,11 +21,18 @@ footer {
     padding: 4rem 0;
 
     .footer__logo {
-      display: flex;
+      background-color: #2c7566;
+      height: 2rem;
       width: 10rem;
-      margin: auto;
+      margin: 0 auto;
       margin-bottom: 2rem;
-      color: $footer-svg;
+      -webkit-mask: url(/src/images/logo.svg) no-repeat center;
+      mask: url(/src/images/logo.svg) no-repeat center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white;
+      }
     }
 
     ul {
@@ -33,7 +40,16 @@ footer {
       justify-content: center;
       gap: 2rem;
       color: $footer-svg;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
+
+      li a {
+        // font-size: ;
+        color: $footer-svg;
+
+        &:hover {
+          color: $white;
+        }
+      }
     }
 
     .socials {
@@ -41,6 +57,42 @@ footer {
       margin: auto;
       justify-content: center;
       gap: 2rem;
+
+      .social {
+        height: 32px;
+        width: 32px;
+        background-color: $footer-svg;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $white;
+        }
+
+        &__1 {
+          -webkit-mask: url(/src/images/icon-twitter.svg) no-repeat center;
+          mask: url(/src/images/icon-twitter.svg) no-repeat center;
+        }
+
+        &__2 {
+          -webkit-mask: url(/src/images/icon-facebook.svg) no-repeat center;
+          mask: url(/src/images/icon-facebook.svg) no-repeat center;
+        }
+        &__3 {
+          -webkit-mask: url(/src/images/icon-instagram.svg) no-repeat center;
+          mask: url(/src/images/icon-instagram.svg) no-repeat center;
+        }
+        &__4 {
+          -webkit-mask: url(/src/images/icon-pinterest.svg) no-repeat center;
+          mask: url(/src/images/icon-pinterest.svg) no-repeat center;
+        }
+      }
+
+      // img {
+      //   cursor: pointer;
+      //   &:hover {
+      //     color: $white;
+      //   }
+      // }
     }
   }
 }

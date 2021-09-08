@@ -123,22 +123,41 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var hamIcon = document.querySelector(".ham__icon");
 var mobileMenu = document.querySelector(".mobile__links");
 var overlay = document.querySelector(".overlay");
-var anchors = document.querySelectorAll("a"); //------------anchor <a> tag prevent default ------------
+var anchors = document.querySelectorAll("a");
+var desktopLinks = document.querySelector(".desktop__links"); //------------anchor <a> tag prevent default ------------
 
 anchors.forEach(function (a) {
   a.addEventListener("click", function (e) {
     e.preventDefault();
   });
 });
+
+var fadeMobileMenu = function fadeMobileMenu() {
+  mobileMenu.classList.toggle("hidden");
+  overlay.classList.toggle("dn");
+};
+
 hamIcon.addEventListener("click", function (e) {
   e.preventDefault();
-  mobileMenu.classList.toggle("hidden");
-  overlay.classList.toggle("dn");
+  fadeMobileMenu();
 });
 overlay.addEventListener("click", function () {
-  mobileMenu.classList.toggle("hidden");
-  overlay.classList.toggle("dn");
+  fadeMobileMenu();
+}); // -------------smooth scroll-------------------
+
+desktopLinks.addEventListener("click", function (e) {
+  smoothScroll(e);
 });
+
+var smoothScroll = function smoothScroll(event) {
+  var link = event.target.closest(".desktop__link");
+  if (!link) return;
+  var targetSection = document.querySelector("#".concat(link.dataset.goto));
+  if (!targetSection) return;
+  targetSection.scrollIntoView({
+    behavior: "smooth"
+  });
+};
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -167,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51976" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49698" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

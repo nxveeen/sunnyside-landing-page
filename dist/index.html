@@ -48,10 +48,10 @@
 
       <!-- desktop navigation links -->
       <ul class="desktop__links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="desktop__link" data-goto="about" href="#">About</a></li>
+        <li><a class="desktop__link" data-goto="services" href="#">Services</a></li>
+        <li><a class="desktop__link" data-goto="porjects" href="#">Projects</a></li>
+        <li><a class="desktop__link" data-goto="contacts" href="#">Contact</a></li>
       </ul>
     </nav>
     <!-- navigation ends here -->
@@ -69,7 +69,7 @@
   <!-- header ends here -->
 
   <!-- section 1 -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="sect">
       <div class="sect__img sect__img1 ">
         <!-- <img class="" src="/src/images/mobile/image-transform.jpg" alt="" srcset=""> -->
@@ -114,7 +114,7 @@
   </section>
 
   <!-- section 2 -->
-  <section class="section">
+  <section class="section" id="services">
     <div class="services">
       <div class="service service__1">
         <div class="content">
@@ -196,17 +196,32 @@
       <img src="/image-gallery-sugar-cubes.6c95faaa.jpg" alt="">
     </div>
     <div class="bottom__footer">
-      <img class="footer__logo" src="/logo.9ad0c186.svg" alt="logo">
+      <div class="footer__logo__container">
+        <div class="footer__logo"></div>
+      </div>
+      <!-- <img class="footer__logo" src="src/images/logo.svg" alt="logo"> -->
       <ul>
-        <li>About</li>
-        <li>service</li>
-        <li>Projects</li>
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Services</a> </li>
+        <li><a href="#">Projects</a> </li>
       </ul>
       <div class="socials">
-        <img src="/icon-facebook.09221842.svg" alt="">
-        <img src="/icon-instagram.7db31a8a.svg" alt="">
-        <img src="/icon-twitter.b344e66e.svg" alt="">
-        <img src="/icon-pinterest.e8e18a07.svg" alt="">
+        <!-- <img src="src/images/icon-facebook.svg" alt="">
+        <img src="src/images/icon-instagram.svg" alt="">
+        <img src="src/images/icon-twitter.svg" alt="">
+        <img src="src/images/icon-pinterest.svg" alt=""> -->
+        <a href="#">
+          <div class="social social__1"></div>
+        </a>
+        <a href="#">
+          <div class="social social__2"></div>
+        </a>
+        <a href="#">
+          <div class="social social__3"></div>
+        </a>
+        <a href="#">
+          <div class="social social__4"></div>
+        </a>
       </div>
     </div>
   </footer>
